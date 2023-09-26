@@ -1,0 +1,12 @@
+{{ define "simple" -}} 
+{{/* this is comment and how commenting is done in template */}}
+{{/* define "Name" define is used to give template a name which increase
+reusability of the template*/}}
+{{.hi}}
+{{.greet.gophers}}
+{{/*both above are the data to be render by "."(this is current context)
+or we can say data which is passed to template.
+.{variable_name(this exsist in our data with same name)}
+please check more in main.go how data looks and passed
+*/}}
+{{end}}
